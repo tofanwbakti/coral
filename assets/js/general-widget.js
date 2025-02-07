@@ -1,184 +1,184 @@
 /*=======/Sales Stats Radial Chart/=======*/
 const salesStatsOption = {
-  series: [70],
-  chart: {
-    height: 370,
-    type: 'radialBar',
-    offsetY: 0,
-  },
- 
-  stroke: {
-    dashArray: 25,
-    curve: 'smooth',
-    lineCap: 'round',
-  },
-  grid: {
-    padding: {
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0, 
-    },
-  },
-  plotOptions: {
-    radialBar: {
-      startAngle: 0,
-      endAngle: 360,
-      hollow: { 
-        size: '75%',
-        image: '../assets/images/apexchart/radial-image.png',
-        imageWidth: 140,
-        imageHeight: 140, 
-        imageClipped: false,
-      },
-      track: { 
-        show: true,
-        background: 'rgba(43, 94, 94, 0.1)',
-        strokeWidth: '97%',
-        opacity: 0.4,
-      },
-      dataLabels: {
-        show: true,
-        name: {
-          show: true,
-          fontSize: '16px',
-          fontFamily: undefined,
-          fontWeight: 600,
-          color: undefined,
-          offsetY: -10,
-        },
-        value: {
-          show: true, 
-          // ...fontCommon,
-          colors: '#848789',
-          fontFamily: '"Nunito Sans", sans-serif',
-          fontWeight: 600,
-          fontSize: '20px', 
-          color: '#292929',
-          offsetY: 6,
-          formatter: function (val) {
-            return val + '%';
-          },
-        },
-      },
-    },
-  },
-  labels: ['New: 2.4k' , 'Returning: 3.2k'],
-  colors: ['var(--theme-default)' , 'rgba(43, 94, 94, 0.1)'], 
-  legend: { 
-    show: true, 
-    position: 'bottom',
-    // ...fontCommon,
-    colors: '#848789',
-    fontSize: '14px',
-    fontFamily: '"Nunito Sans", sans-serif',
-    fontWeight: 600,
-    markers: {
-      width: 18,
-      height: 18,
-      strokeWidth: 5, 
-      colors: '#fff',
-      strokeColors: 'rgba(43, 94, 94, 0.1)', 
-      radius: 20,
-    },
-    onItemClick: {
-      toggleDataSeries: false,
-    },
-    onItemHover: {
-      highlightDataSeries: false,
-    },
-  },
-  responsive: [
-    {
-      breakpoint: 1600,
-      options: {
-        plotOptions: {
-          radialBar: { 
-            hollow: {
-              size: '68%',
-              imageWidth: 140,
-              imageHeight: 140,
-            },
-            dataLabels: {
-              name: {
-                fontSize: '14px',
-                offsetY: -8,
-              },
-              value: {
-                fontSize: '18px',
-              },
-            },
-          },
-        },
-      },
-    },
-    {
-      breakpoint: 676,
-      options: {
-        chart: {
-          height: 350,
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '68%',
-            },
-          },
-        },
-      },
-    },
-    {
-      breakpoint: 576,
-      options: {
-        chart: {
-          height: 320,
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '70%',
-              imageWidth: 120,
-              imageHeight: 120,
-            },
-          },
-        },
-      },
-    },
-    {
-      breakpoint: 531,
-      options: {
-        chart: {
-          height: 300,
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '70%',
-              imageWidth: 100,
-              imageHeight: 100,
-            },
-          },
-        },
-      },
-    },
-    {
-      breakpoint: 426,
-      options: {
-        chart: {
-          height: 280,
-        },
-        plotOptions: {
-          radialBar: {
-            hollow: {
-              size: '70%',
-              imageWidth: 100,
-              imageHeight: 100,
-            },
-          },
-        },
-      },
-    },
-  ],
+	series: [70],
+	chart: {
+		height: 370,
+		type: "radialBar",
+		offsetY: 0,
+	},
+
+	stroke: {
+		dashArray: 25,
+		curve: "smooth",
+		lineCap: "round",
+	},
+	grid: {
+		padding: {
+			top: 0,
+			left: 0,
+			right: 0,
+			bottom: 0,
+		},
+	},
+	plotOptions: {
+		radialBar: {
+			startAngle: 0,
+			endAngle: 360,
+			hollow: {
+				size: "75%",
+				image: "../assets/images/apexchart/radial-img.png",
+				imageWidth: 140,
+				imageHeight: 140,
+				imageClipped: false,
+			},
+			track: {
+				show: true,
+				background: "rgba(43, 94, 94, 0.1)",
+				strokeWidth: "97%",
+				opacity: 0.4,
+			},
+			dataLabels: {
+				show: true,
+				name: {
+					show: true,
+					fontSize: "16px",
+					fontFamily: undefined,
+					fontWeight: 600,
+					color: undefined,
+					offsetY: -10,
+				},
+				value: {
+					show: true,
+					// ...fontCommon,
+					colors: "#848789",
+					fontFamily: '"Nunito Sans", sans-serif',
+					fontWeight: 600,
+					fontSize: "20px",
+					color: "#292929",
+					offsetY: 6,
+					formatter: function (val) {
+						return val + "%";
+					},
+				},
+			},
+		},
+	},
+	labels: ["New: 2.4k", "Returning: 3.2k"],
+	colors: ["var(--theme-default)", "rgba(43, 94, 94, 0.1)"],
+	legend: {
+		show: true,
+		position: "bottom",
+		// ...fontCommon,
+		colors: "#848789",
+		fontSize: "14px",
+		fontFamily: '"Nunito Sans", sans-serif',
+		fontWeight: 600,
+		markers: {
+			width: 18,
+			height: 18,
+			strokeWidth: 5,
+			colors: "#fff",
+			strokeColors: "rgba(43, 94, 94, 0.1)",
+			radius: 20,
+		},
+		onItemClick: {
+			toggleDataSeries: false,
+		},
+		onItemHover: {
+			highlightDataSeries: false,
+		},
+	},
+	responsive: [
+		{
+			breakpoint: 1600,
+			options: {
+				plotOptions: {
+					radialBar: {
+						hollow: {
+							size: "68%",
+							imageWidth: 140,
+							imageHeight: 140,
+						},
+						dataLabels: {
+							name: {
+								fontSize: "14px",
+								offsetY: -8,
+							},
+							value: {
+								fontSize: "18px",
+							},
+						},
+					},
+				},
+			},
+		},
+		{
+			breakpoint: 676,
+			options: {
+				chart: {
+					height: 350,
+				},
+				plotOptions: {
+					radialBar: {
+						hollow: {
+							size: "68%",
+						},
+					},
+				},
+			},
+		},
+		{
+			breakpoint: 576,
+			options: {
+				chart: {
+					height: 320,
+				},
+				plotOptions: {
+					radialBar: {
+						hollow: {
+							size: "70%",
+							imageWidth: 120,
+							imageHeight: 120,
+						},
+					},
+				},
+			},
+		},
+		{
+			breakpoint: 531,
+			options: {
+				chart: {
+					height: 300,
+				},
+				plotOptions: {
+					radialBar: {
+						hollow: {
+							size: "70%",
+							imageWidth: 100,
+							imageHeight: 100,
+						},
+					},
+				},
+			},
+		},
+		{
+			breakpoint: 426,
+			options: {
+				chart: {
+					height: 280,
+				},
+				plotOptions: {
+					radialBar: {
+						hollow: {
+							size: "70%",
+							imageWidth: 100,
+							imageHeight: 100,
+						},
+					},
+				},
+			},
+		},
+	],
 };
 
 const salesStatsChartsEl = new ApexCharts(document.querySelector('#salesStatsRadialCharts'), salesStatsOption);

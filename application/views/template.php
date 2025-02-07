@@ -57,7 +57,7 @@
       <div class="page-header">
         <div class="header-wrapper row m-0">
           <div class="header-logo-wrapper col-auto p-0">
-            <div class="logo-wrapper"><a href="index.html"> <img class="img-fluid for-light" src="<?=base_url()?>assets/images/logo/logo_new.png" alt=""><img class="img-fluid for-dark" src="<?=base_url()?>assets/images/logo/logo_dark.png" alt=""></a></div>
+            <div class="logo-wrapper"><a href="<?= site_url('Dashboard')?>"> <img class="img-fluid for-light" src="<?=base_url()?>assets/images/logo/logo-icon.png" alt=""><img class="img-fluid for-dark" src="<?=base_url()?>assets/images/logo/logo-icon.png" alt=""></a></div>
             <div class="toggle-sidebar">
               <svg class="sidebar-toggle"> 
                 <use href="<?=base_url()?>assets/svg/icon-sprite.svg#stroke-animation"></use>
@@ -163,8 +163,9 @@
               </li>
               <?php 
               if (session_status() === PHP_SESSION_NONE) {
-                session_start();
-            }
+                  session_start();
+                  // echo session;
+              }
               ?>
               <li class="profile-nav onhover-dropdown pe-0 py-0">
                 <div class="d-flex align-items-center profile-media"><img class="b-r-25" src="<?=base_url()?>assets/images/dashboard/profile.png" alt="">
@@ -203,7 +204,7 @@
         <!-- Page Sidebar Start-->
         <div class="sidebar-wrapper" data-layout="stroke-svg">
           <div>
-            <div class="logo-wrapper"><a href="index.html"> <img class="img-fluid for-light" src="<?=base_url()?>assets/images/logo/logo_new.png" alt=""><img class="img-fluid for-dark" src="<?=base_url()?>assets/images/logo/logo_new_dark.png" alt=""></a>
+            <div class="logo-wrapper"><a href="<?=site_url('Dashboard')?>"> <img class="img-fluid for-light" src="<?=base_url()?>assets/images/logo/logo-Coral.png" alt=""><img class="img-fluid for-dark" src="<?=base_url()?>assets/images/logo/logo-Coral-Dark.png" alt=""></a>
               <div class="toggle-sidebar">
                 <svg class="sidebar-toggle"> 
                   <use href="<?=base_url()?>assets/svg/icon-sprite.svg#toggle-icon"></use>
@@ -262,13 +263,8 @@
                         <use href="<?=base_url()?>assets/svg/icon-sprite.svg#fill-layout"></use>
                       </svg><span>Peraturan</span></a>
                     <ul class="sidebar-submenu">
-                      <li><a href="box-layout.html">Boxed</a></li>
-                      <li><a href="layout-rtl.html">RTL</a></li>
-                      <li><a href="layout-dark.html">Dark Layout</a></li>
-                      <li><a href="hide-on-scroll.html">Hide Nav Scroll</a></li>
-                      <li><a href="footer-light.html">Footer Light</a></li>
-                      <li><a href="footer-dark.html">Footer Dark</a></li>
-                      <li><a href="footer-fixed.html">Footer Fixed</a></li>
+                      <li><a href="box-layout.html">Pemerintah</a></li>
+                      <li><a href="layout-rtl.html">Perusahaan</a></li>
                     </ul>
                   </li>
                   <li class="sidebar-main-title">
@@ -276,6 +272,7 @@
                       <h6>Coorporate</h6>
                     </div>
                   </li>
+                  <!-- Direktorat Chairman -->
                   <li class="mega-menu sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
                       <svg class="stroke-icon">
                         <use href="<?=base_url()?>assets/svg/icon-sprite.svg#stroke-others"></use>
@@ -293,7 +290,7 @@
                               </div>
                               <ul class="submenu-content opensubmegamenu">
                                 <li><a href="<?=site_url('Chairman/unit_ict')?>">General</a></li>
-                                <li><a href="<?=site_url('Chairman/jobdesk_ict')?>">Job Desk</a></li>
+                                <li><a href="<?=site_url('Chairman/jobdesc_ict')?>">Job Desc</a></li>
                                 <li><a href="<?=site_url('Chairman/asset_ict')?>">Aset ICT</a></li>
                               </ul>
                             </div>
@@ -304,8 +301,9 @@
                                 <h5> Corp. Legal</h5>
                               </div>
                               <ul class="submenu-content opensubmegamenu">
-                              <li><a href="error-400.html">General</a></li>
-                                <li><a href="error-401.html">Daftar Perijinan</a></li>
+                                <li><a href="<?=site_url('Chairman/unit_legal')?>">General</a></li>
+                                <li><a href="<?=site_url('Chairman/jobdesc_legal')?>">Job Desc</a></li>
+                                <li><a href="<?=site_url('Chairman/perjanjian_legal')?>">Daftar Perijinan</a></li>
                               </ul>
                             </div>
                           </div>
@@ -315,8 +313,8 @@
                                 <h5>QHSE</h5>
                               </div>
                               <ul class="submenu-content opensubmegamenu">
-                                <li><a href="error-400.html">General</a></li>
-                                <li><a href="error-401.html">Job Desk</a></li>
+                                <li><a href="<?=site_url('Chairman/unit_qhse')?>">General</a></li>
+                                <li><a href="<?=site_url('Chairman/jobdesc_qhse')?>">Job Desc</a></li>
                               </ul>
                             </div>
                           </div>
@@ -326,8 +324,8 @@
                                 <h5>Corp. Secretary</h5>
                               </div>
                               <ul class="submenu-content opensubmegamenu">
-                                <li><a href="error-400.html">General</a></li>
-                                <li><a href="error-401.html">Job Desk</a></li>
+                                <li><a href="<?=site_url('Chairman/unit_secretary')?>">General</a></li>
+                                <li><a href="<?=site_url('Chairman/jobdesc_secretary')?>">Job Desc</a></li>
                               </ul>
                             </div>
                           </div>
@@ -335,8 +333,72 @@
                       </div>
                     </div>
                   </li>
-
-
+                  <!-- .end Direktorat Chairman -->
+                  <!-- Direktorat Admin & Keuangan -->
+                  <li class="mega-menu sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title" href="#">
+                      <svg class="stroke-icon">
+                        <use href="<?=base_url()?>assets/svg/icon-sprite.svg#stroke-others"></use>
+                      </svg>
+                      <svg class="fill-icon">
+                        <use href="<?=base_url()?>assets/svg/icon-sprite.svg#fill-others"></use>
+                      </svg><span>Dir. Adm & Keuangan</span></a>
+                    <div class="mega-menu-container menu-content">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col mega-box">
+                            <div class="link-section">
+                              <div class="submenu-title">
+                                <h5>Keuangan</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="<?=site_url('Adm_Fin/unit_keuangan')?>">General</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/jobdesc_keuangan')?>">Job Desc</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/laporan_keuangan')?>">Lap. Keuangan</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/laporan_labarugi')?>">Lap. Laba Rugi</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/laporan_neraca')?>">Lap. Neraca</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section">
+                              <div class="submenu-title">
+                                <h5> General Affr.</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                              <li><a href="<?=site_url('Adm_Fin/unit_ga')?>">General</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/jobdesc_ga')?>">Job Desc</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/asset_ga')?>">Asset GA</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/mobil_ga')?>">Asset Mobil</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section">
+                              <div class="submenu-title">
+                                <h5> Purchasing</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="<?=site_url('Adm_Fin/unit_purchasing')?>">General</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/jobdesc_purchasing')?>">Job Desc</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                          <div class="col mega-box">
+                            <div class="link-section">
+                              <div class="submenu-title">
+                                <h5>HRD</h5>
+                              </div>
+                              <ul class="submenu-content opensubmegamenu">
+                                <li><a href="<?=site_url('Adm_Fin/unit_hrd')?>">General</a></li>
+                                <li><a href="<?=site_url('Adm_Fin/jobdesc_hrd')?>">Job Desc</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <!-- .end Direktorat Admin & Keuangan -->
                   
                   <li class="sidebar-main-title">
                     <div>
@@ -909,10 +971,10 @@
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 p-0 footer-copyright">
-                <p class="mb-0">Copyright 2025 © Rangkol | Ruang Kolaborasi.</p>
+                <p class="mb-0">Copyright 2025 © Bias | ICT Tim.</p>
               </div>
               <div class="col-md-6 p-0">
-                <p class="heart mb-0">Hand crafted &amp; made with
+                <p class="heart mb-0">Didesain &amp; dikembangkan dengan
                   <svg class="footer-icon">
                     <use href="<?=base_url()?>assets/svg/icon-sprite.svg#heart"></use>
                   </svg>
@@ -963,9 +1025,12 @@
     <script src="<?=base_url()?>assets/js/owlcarousel/owl.carousel.js"></script>
     <script src="<?=base_url()?>assets/js/owlcarousel/owl-custom.js"></script>
     <script src="<?=base_url()?>assets/js/height-equal.js"></script>
+    <script src="<?= base_url()?>assets/js/bookmark/jquery.validate.min.js"></script>
+    <script src="<?= base_url()?>assets/js/bookmark/custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="<?=base_url()?>assets/js/script.js"></script>
+    <!-- <script src="<?=base_url()?>assets/js/general-widget.js"></script> -->
     <!-- <script src="<?=base_url()?>assets/js/theme-customizer/customizer.js"></script> -->
     <!-- Plugin used-->
      <script>
@@ -980,6 +1045,10 @@
           return this.href == url;
         }).parentsUntil(".sidebar-links > .sidebar-submenu")
         .css({'display':'block'}).prev('a').addClass('active');
+
+        $('div.submenu-title').filter(function(){
+          return this.href == url;
+        }).addClass('active');
         
         $('ul.submenu-content a').filter(function(){
           return this.href == url;
@@ -987,6 +1056,7 @@
         .css({'display':'block'}).prev('a').addClass('active');
 
       });
+      // console.log(window.location);
      </script>
   </body>
 </html>

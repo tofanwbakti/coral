@@ -6,7 +6,7 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'title' => 'Rangkol - Ruang Kolaborasi'
+			'title' => 'Coral - Corporate Portal'
 		);
 		$this->template->load('template','dashboard_view',$data);
 		// $this->load->view('dashboard_view');

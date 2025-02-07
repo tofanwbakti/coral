@@ -28,7 +28,7 @@
         <div class="card-body premium-card">
           <div class="row premium-courses-card">
             <div class="col-md-7 premium-course">
-              <h1 class="f-w-700">Ruang Kolaborasi</h1><p class="f-light f-w-400 f-14">Portal informasi dan pengetahun untuk menciptakan kebersamaan yang kuat dalam lingkungan perusahaan dengan saling berkolaborasi. </p><a class="btn btn-square btn-primary f-w-700" href="#" disabled>Selamat Datang</a>
+              <h1 class="f-w-700 m-b-5">Corporate Portal</h1><p class="f-light f-w-400 f-14">Portal informasi dan pengetahun untuk menciptakan kebersamaan yang kuat dalam lingkungan perusahaan dengan saling berkolaborasi. </p><a class="btn btn-square btn-primary f-w-700 m-t-5" href="#" disabled>Selamat Datang</a>
             </div>
             <div class="col-md-5 premium-course-img"> 
               <div class="premium-message"><img class="img-fluid" src="<?=base_url()?>assets/images/dashboard/massage.gif" alt="massage"></div>
@@ -75,10 +75,11 @@
               <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000"><img class="d-block w-100" src="<?=base_url()?>assets/images/slider/1.jpg" alt="drawing-room">
+              <div class="carousel-item active" data-bs-interval="10000"><img class="d-block w-100" src="<?=base_url()?>assets/images/slider/mariana-golder.png" alt="drawing-room">
                 <div class="carousel-caption d-none d-md-block carousel-opacity">
                   <h3>We decorate our homes </h3>
                   <p>If you have been dreaming about bringing your living room together, our designers are here to help. Come see what we can do for your space.</p>
+                  <a class="btn btn-square btn-primary f-w-700 m-t-5" href="#" disabled>Baca..</a>
                 </div>
               </div>
               <div class="carousel-item" data-bs-interval="2000"><img class="d-block w-100" src="<?=base_url()?>assets/images/slider/3.jpg" alt="drawing-room">
@@ -87,7 +88,7 @@
                   <p>A sofa is the ideal spot to enjoy a movie, nod off, and wake up.</p>
                 </div>
               </div>
-              <div class="carousel-item"><img class="d-block w-100" src="<?=base_url()?>assets/images/slider/6.jpg" alt="drawing-room">
+              <div class="carousel-item"><img class="d-block w-100" src="<?=base_url()?>assets/images/slider/mariana-golder.png" alt="drawing-room">
                 <div class="carousel-caption d-none d-md-block carousel-opacity">
                   <h3>Sometimes all you really need to unwind is a comfortable couch.</h3>
                   <p>A house you can create with your friends is a great place. </p>
