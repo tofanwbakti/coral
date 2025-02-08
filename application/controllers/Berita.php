@@ -8,7 +8,7 @@ class Berita extends CI_Controller {
 		$data = array(
 			'title' => 'Rangkol - Berita'
 		);
-		$this->template->load('template','berita_view',$data);
+		$this->template->load('template','berita/berita_view',$data);
 		// $this->load->view('dashboard_view');
 	}
 }

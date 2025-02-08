@@ -5,21 +5,21 @@
   <div class="page-title">
     <div class="row">
       <div class="col-xl-4 col-sm-7 box-col-3">
-        <h3>ICT - Job Desc</h3>
+        <h3>Keuangan - Job Desc</h3>
       </div>
       <div class="col-5 d-none d-xl-block">
         
       </div>
       <div class="col-xl-3 col-sm-5 box-col-4">
         <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">
-              <svg class="stroke-icon">
-                <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
-              </svg></a>
-          </li>
-          <li class="breadcrumb-item">Dir. Chairman</li>
-          <li class="breadcrumb-item">ICT</li>
-          <li class="breadcrumb-item active">Job Desk</li>
+            <li class="breadcrumb-item"><a href="index.html">
+                <svg class="stroke-icon">
+                  <use href="../assets/svg/icon-sprite.svg#stroke-home"></use>
+                </svg></a>
+            </li>
+            <li class="breadcrumb-item">Dir. Admini & Keuangan</li>
+            <li class="breadcrumb-item">Keuangan</li>
+            <li class="breadcrumb-item active">Job Desc</li>
         </ol>
       </div>
     </div>
@@ -32,7 +32,7 @@
       <div class="card">
         <div class="card-header card-no-border">
           <div class="header-top">
-            <h4>Last Orders </h4>
+            <h4>Daftar Personil dan Job Description </h4>
             <div class="dropdown icon-dropdown setting-menu">
               <button class="btn dropdown-toggle" id="userdropdown3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg>
@@ -49,11 +49,10 @@
               <thead>
                 <tr>
                   <th>Name </th>
-                  <th>Order No.  </th>
-                  <th>Amount</th>
-                  <th>Payment Type </th>
-                  <th>Date</th>
-                  <th>Action </th>
+                  <th>Nip  </th>
+                  <th>Jabatan</th>
+                  <th>Unit Kerja </th>
+                  <th>Jobdesc</th>
                 </tr>
               </thead>
               <tbody>
@@ -68,15 +67,7 @@
                   <td>#790841</td>
                   <td>$2.499</td>
                   <td>Credit Card</td>
-                  <td>1 Oct, 14:43</td>
-                  <td> 
-                    <div class="dropdown icon-dropdown">
-                      <button class="btn dropdown-toggle" id="userdropdownes4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="drop-menu"><i class="icon-more-alt"></i></div>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdownes4"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
-                    </div>
-                  </td>
+                  <td><a href=""><i data-feather="download-cloud"></i></a></td>
                 </tr>
                 <tr>
                   <td>
@@ -89,15 +80,7 @@
                   <td>#454489</td>
                   <td>$2.499</td>
                   <td>Paypal</td>
-                  <td>30 Sep, 23:01</td>
-                  <td>
-                    <div class="dropdown icon-dropdown">
-                      <button class="btn dropdown-toggle" id="userdropdownes1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="drop-menu"><i class="icon-more-alt"></i></div>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdownes1"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
-                    </div>
-                  </td>
+                  <td><a href=""><i data-feather="download-cloud"></i></a></td>
                 </tr>
                 <tr>
                   <td>
@@ -110,15 +93,7 @@
                   <td>#594579</td>
                   <td>$2.499</td>
                   <td>Credit Card</td>
-                  <td>29 Sep,09:31</td>
-                  <td>
-                    <div class="dropdown icon-dropdown">
-                      <button class="btn dropdown-toggle" id="userdropdownes2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="drop-menu"><i class="icon-more-alt"></i></div>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdownes2"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
-                    </div>
-                  </td>
+                  <td><a href=""><i data-feather="download-cloud"></i></a></td>
                 </tr>
                 <tr>
                   <td>
@@ -131,15 +106,7 @@
                   <td>#478495</td>
                   <td>$2.499</td>
                   <td>Credit Card</td>
-                  <td>28 Sep, 04:34</td>
-                  <td>
-                    <div class="dropdown icon-dropdown">
-                      <button class="btn dropdown-toggle" id="userdropdownes3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="drop-menu"><i class="icon-more-alt"></i></div>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdownes3"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly      </a></div>
-                    </div>
-                  </td>
+                  <td><a href=""> <i data-feather="download-cloud"></i></a></td>
                 </tr>
               </tbody>
             </table>

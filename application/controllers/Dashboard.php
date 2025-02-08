@@ -8,7 +8,7 @@ class Dashboard extends CI_Controller {
 		$data = array(
 			'title' => 'Coral - Corporate Portal'
 		);
-		$this->template->load('template','dashboard_view',$data);
+		$this->template->load('template','dashboard/dashboard_view',$data);
 		// $this->load->view('dashboard_view');
 	}
 }
