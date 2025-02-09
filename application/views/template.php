@@ -172,9 +172,9 @@
                   </div>
                 </div>
                 <ul class="profile-dropdown onhover-show-div">
-                  <li><a href="edit-profile.html"><i data-feather="settings"></i><span>Version</span></a></li>
-                  <li><a href="user-profile.html"><i data-feather="user"></i><span>Developers </span></a></li>
-                  <li><a href="login.html"> <i data-feather="log-in"></i><span>Log In</span></a></li>
+                  <li><a href="javascript:void(0)"><i data-feather="settings"></i><span>Version</span></a></li>
+                  <li><a href="javascript:void(0)"><i data-feather="user"></i><span>Developers </span></a></li>
+                  <li><a href="<?= site_url('Auth')?>"> <i data-feather="log-in"></i><span>Log In</span></a></li>
                 </ul>
               </li>
             </ul>
