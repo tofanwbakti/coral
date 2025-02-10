@@ -104,112 +104,40 @@
     <!-- .end Informasi internal -->
     <div class="col-xl-6 col-md-12 box-col-12 proorder-md-4">
       <div class="card">
-        <div class="card-header card-no-border">
-          <div class="header-top">
-            <h4>Aktifitas Terakhir </h4>
-            <!-- <div class="dropdown icon-dropdown setting-menu">
-              <button class="btn dropdown-toggle" id="userdropdown3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <svg>
-                  <use href="<?=base_url()?>assets/svg/icon-sprite.svg#setting"></use>
-                </svg>
-              </button>
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdown3"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly </a><a class="dropdown-item" href="#">Yearly</a></div>
-            </div> -->
-          </div>
+        <div class="card-header pb-0 card-no-border">
+          <h4>Daftar Telp. Ext.</h4>
         </div>
-        <div class="card-body pt-0">
-          <div class="table-responsive custom-scrollbar"> 
-            <table class="last-orders-table table" id="last-orders">
+        <div class="card-body"> 
+          <div class="table-responsive custom-scrollbar user-datatable theme-scrollbar">
+            <table class="display custom-scrollbar" id="basic-12">
               <thead>
                 <tr>
-                  <th>Nama </th>
-                  <th>Aktifitas</th>
-                  <th>Tanggal</th>
-                  <th>Action </th>
+                  <th>Name </th>
+                  <th>Position</th>
+                  <th>Office</th>
+                  <th>Ext.</th>
                 </tr>
               </thead>
               <tbody>
-                <tr> 
-                  <td>
-                    <div class="user-data">
-                      <div><img src="<?=base_url()?>assets/images/dashboard/avtar/2.jpg" alt="avatar"></div>
-                      <div> <a href="user-profile.html"> 
-                          <h4>Dmitriy Groshev</h4></a><span>Switzerland</span></div>
-                    </div>
-                  </td>
-                  <td>#790841</td>
-                  <td>1 Oct, 14:43</td>
-                  <td> 
-                    <div class="dropdown icon-dropdown">
-                      <button class="btn dropdown-toggle" id="userdropdownes4" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="drop-menu"><i class="icon-more-alt"></i></div>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdownes4"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
-                    </div>
-                  </td>
+                <tr>
+                  <td> <img class="img-fluid table-avtar" src="<?=base_url()?>assets/images/user/1.jpg" alt="">Tiger Nixon</td>
+                  <td>System Architect</td>
+                  <td>Edinburgh</td>
+                  <td>61</td>
                 </tr>
                 <tr>
-                  <td>
-                    <div class="user-data">
-                      <div><img src="<?=base_url()?>assets/images/dashboard/avtar/17.jpg" alt="avatar"></div>
-                      <div><a href="user-profile.html">
-                          <h4>Patrick Beverley</h4></a><span> Germany</span></div>
-                    </div>
-                  </td>
-                  <td>#454489</td>
-                  <td>30 Sep, 23:01</td>
-                  <td>
-                    <div class="dropdown icon-dropdown">
-                      <button class="btn dropdown-toggle" id="userdropdownes1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="drop-menu"><i class="icon-more-alt"></i></div>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdownes1"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="user-data">
-                      <div><img src="<?=base_url()?>assets/images/avtar/18.jpg" alt="avatar"></div>
-                      <div><a href="user-profile.html">
-                          <h4>Kevin Greem</h4></a><span> Canada</span></div>
-                    </div>
-                  </td>
-                  <td>#594579</td>
-                  <td>29 Sep,09:31</td>
-                  <td>
-                    <div class="dropdown icon-dropdown">
-                      <button class="btn dropdown-toggle" id="userdropdownes2" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="drop-menu"><i class="icon-more-alt"></i></div>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdownes2"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly</a></div>
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <div class="user-data">
-                      <div><img src="<?=base_url()?>assets/images/dashboard/avtar/19.jpg" alt="avatar"></div>
-                      <div><a href="user-profile.html">
-                          <h4>William Barton</h4></a><span>United States</span></div>
-                    </div>
-                  </td>
-                  <td>#478495</td>
-                  <td>28 Sep, 04:34</td>
-                  <td>
-                    <div class="dropdown icon-dropdown">
-                      <button class="btn dropdown-toggle" id="userdropdownes3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="drop-menu"><i class="icon-more-alt"></i></div>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="userdropdownes3"><a class="dropdown-item" href="#">Weekly</a><a class="dropdown-item" href="#">Monthly</a><a class="dropdown-item" href="#">Yearly      </a></div>
-                    </div>
-                  </td>
+                  <td> <img class="img-fluid table-avtar" src="<?=base_url()?>assets/images/user/2.png" alt="">Garrett Winters</td>
+                  <td>Accountant</td>
+                  <td>Tokyo</td>
+                  <td>63</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
       </div>
+
+     
     </div>
     <div class="col-xl-6 col-sm-12 proorder-md-9 box-col-6">
       <div class="card">

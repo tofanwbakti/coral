@@ -259,6 +259,24 @@
                       <li><a href="layout-rtl.html">Perusahaan</a></li>
                     </ul>
                   </li>
+                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"  href="<?= site_url('Struktur')?>">
+                      <svg class="stroke-icon">
+                        <use href="<?=base_url()?>assets/svg/icon-sprite.svg#stroke-blog"></use>
+                      </svg>
+                      <svg class="fill-icon">
+                        <use href="<?=base_url()?>assets/svg/icon-sprite.svg#stroke-blog"></use>
+                      </svg><span>Struktur Perusahaan</span></a>
+                    
+                  </li>
+                  <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"  href="<?= site_url('Kontak')?>">
+                      <svg class="stroke-icon">
+                        <use href="<?=base_url()?>assets/svg/icon-sprite.svg#stroke-blog"></use>
+                      </svg>
+                      <svg class="fill-icon">
+                        <use href="<?=base_url()?>assets/svg/icon-sprite.svg#stroke-blog"></use>
+                      </svg><span>Kontak</span></a>
+                    
+                  </li>                  
                   <li class="sidebar-main-title">
                     <div>
                       <h6>Coorporate</h6>
@@ -485,6 +503,7 @@
     <script src="<?=base_url()?>assets/js/height-equal.js"></script>
     <script src="<?= base_url()?>assets/js/bookmark/jquery.validate.min.js"></script>
     <script src="<?= base_url()?>assets/js/bookmark/custom.js"></script>
+    <script src="<?= base_url()?>assets/js/contacts/custom.js"></script>
     <!-- Plugins JS Ends-->
     <!-- Theme js-->
     <script src="<?=base_url()?>assets/js/script.js"></script>
