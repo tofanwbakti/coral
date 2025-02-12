@@ -255,8 +255,8 @@
                         <use href="<?=base_url()?>assets/svg/icon-sprite.svg#fill-layout"></use>
                       </svg><span>Peraturan</span></a>
                     <ul class="sidebar-submenu">
-                      <li><a href="box-layout.html">Pemerintah</a></li>
-                      <li><a href="layout-rtl.html">Perusahaan</a></li>
+                      <li><a href="<?= site_url('Peraturan/pemerintah')?>">Pemerintah</a></li>
+                      <li><a href="<?= site_url('Peraturan/perusahaan')?>">Perusahaan</a></li>
                     </ul>
                   </li>
                   <li class="sidebar-list"><i class="fa fa-thumb-tack"></i><a class="sidebar-link sidebar-title link-nav"  href="<?= site_url('Struktur')?>">
